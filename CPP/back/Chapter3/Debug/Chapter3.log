@@ -1,0 +1,16 @@
+﻿  3_5 Relational Operator.cpp
+  3_4 sizeof, 쉼표연산자, 조건부연산자.cpp
+d:\project\c\lecture_hongjungmo\c++\chapter3\3_4 sizeof, 쉼표연산자, 조건부연산자.cpp(20): error C2371: 'a': redefinition; different basic types
+  d:\project\c\lecture_hongjungmo\c++\chapter3\3_4 sizeof, 쉼표연산자, 조건부연산자.cpp(6): note: see declaration of 'a'
+d:\project\c\lecture_hongjungmo\c++\chapter3\3_4 sizeof, 쉼표연산자, 조건부연산자.cpp(23): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+d:\project\c\lecture_hongjungmo\c++\chapter3\3_4 sizeof, 쉼표연산자, 조건부연산자.cpp(26): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+d:\project\c\lecture_hongjungmo\c++\chapter3\3_4 sizeof, 쉼표연산자, 조건부연산자.cpp(42): error C2373: 'price': redefinition; different type modifiers
+  d:\project\c\lecture_hongjungmo\c++\chapter3\3_4 sizeof, 쉼표연산자, 조건부연산자.cpp(34): note: see declaration of 'price'
+d:\project\c\lecture_hongjungmo\c++\chapter3\3_4 sizeof, 쉼표연산자, 조건부연산자.cpp(45): error C2373: 'price': redefinition; different type modifiers
+  d:\project\c\lecture_hongjungmo\c++\chapter3\3_4 sizeof, 쉼표연산자, 조건부연산자.cpp(34): note: see declaration of 'price'
+d:\project\c\lecture_hongjungmo\c++\chapter3\3_4 sizeof, 쉼표연산자, 조건부연산자.cpp(45): error C3861: 'getPrice': identifier not found
+  3_9 practice.cpp
+  3_9 bit flag.cpp
+  3_8 bitwise operators.cpp
+  3_9 bit mask.cpp
+  Generating Code...

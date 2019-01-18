@@ -1,0 +1,7 @@
+﻿  camerarays.cpp
+c:\users\cglab5\desktop\hjeong\scratchapixel\ray-tracing generating camera rays\camerarays.cpp(110): warning C4244: 'argument': conversion from 'double' to 'const float', possible loss of data
+c:\users\cglab5\desktop\hjeong\scratchapixel\ray-tracing generating camera rays\camerarays.cpp(110): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\cglab5\desktop\hjeong\scratchapixel\ray-tracing generating camera rays\camerarays.cpp(135): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\cglab5\desktop\hjeong\scratchapixel\ray-tracing generating camera rays\camerarays.cpp(136): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  Ray-Tracing Generating Camera Rays.vcxproj -> C:\Users\CGLab5\Desktop\hjeong\SCRATCHAPIXEL\Scratchapixel\Debug\Ray-Tracing Generating Camera Rays.exe
+  Ray-Tracing Generating Camera Rays.vcxproj -> C:\Users\CGLab5\Desktop\hjeong\SCRATCHAPIXEL\Scratchapixel\Debug\Ray-Tracing Generating Camera Rays.pdb (Full PDB)

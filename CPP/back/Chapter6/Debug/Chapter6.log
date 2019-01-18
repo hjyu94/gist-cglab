@@ -1,0 +1,7 @@
+﻿  6_1 array.cpp
+  6_20 std_array.cpp
+  6_21 std_vector.cpp
+  Generating Code...
+6_20 std_array.obj : error LNK2005: _main already defined in 6_1 array.obj
+6_21 std_vector.obj : error LNK2005: _main already defined in 6_1 array.obj
+D:\Project\C\lecture_HongJungMo\C++\Debug\Chapter6.exe : fatal error LNK1169: one or more multiply defined symbols found

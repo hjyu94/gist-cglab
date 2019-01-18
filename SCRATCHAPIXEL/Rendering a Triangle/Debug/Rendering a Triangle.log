@@ -1,0 +1,9 @@
+﻿  raytri.cpp
+c:\users\cglab5\desktop\hjeong\scratchapixel\rendering a triangle\raytri.cpp(44): warning C4305: 'initializing': truncation from 'double' to 'float'
+c:\users\cglab5\desktop\hjeong\scratchapixel\rendering a triangle\raytri.cpp(49): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+c:\users\cglab5\desktop\hjeong\scratchapixel\rendering a triangle\raytri.cpp(159): warning C4305: 'initializing': truncation from 'double' to 'float'
+c:\users\cglab5\desktop\hjeong\scratchapixel\rendering a triangle\raytri.cpp(160): warning C4244: 'argument': conversion from 'double' to 'const float', possible loss of data
+c:\users\cglab5\desktop\hjeong\scratchapixel\rendering a triangle\raytri.cpp(166): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\cglab5\desktop\hjeong\scratchapixel\rendering a triangle\raytri.cpp(167): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  Rendering a Triangle.vcxproj -> C:\Users\CGLab5\Desktop\hjeong\SCRATCHAPIXEL\Rendering a Triangle\Debug\Rendering a Triangle.exe
+  Rendering a Triangle.vcxproj -> C:\Users\CGLab5\Desktop\hjeong\SCRATCHAPIXEL\Rendering a Triangle\Debug\Rendering a Triangle.pdb (Full PDB)

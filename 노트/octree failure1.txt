@@ -1,0 +1,122 @@
+
+class Octree
+{
+public:
+	class Node
+	{
+	public:
+		std::vector<Node*> child;
+		Node* parent = nullptr;
+		
+		BoundingBox3f b_box;
+		MatrixXu      m_F;      ///< Faces
+
+	public:
+		void appendChild(Node* target_child)
+		{
+			 target_child->parent = this;
+			 child.push_back(target_child);
+		}
+	};
+
+
+	Node* root;
+
+public:
+	Octree()
+	{
+		this->root->parent = nullptr;
+	}
+
+	Octree(Node * node)
+	{
+		node->parent = nullptr;
+		this->root = node;
+	}
+};
+
+Octree::Node * Accel::build(BoundingBox3f b_box, MatrixXu triangles) {
+
+	const MatrixXf & m_V = m_mesh->getVertexPositions();
+
+	if (triangles.cols() < 10) {
+		return nullptr;
+	}
+
+	// b_box를 8분할해서 sub_b_box에 추가한다.
+	std::vector<BoundingBox3f> sub_b_box;
+	float x1 = b_box.min.x();
+	float x2 = b_box.getCenter().x();
+	float x3 = b_box.max.x();
+
+	float y1 = b_box.min.y();
+	float y2 = b_box.getCenter().y();
+	float y3 = b_box.max.y();
+
+	float z1 = b_box.min.z();
+	float z2 = b_box.getCenter().z();
+	float z3 = b_box.max.z();
+
+	sub_b_box.push_back(BoundingBox3f{ Point3f{ x1,y1,z1 }, Point3f{ x2,y2,z2 } });
+	sub_b_box.push_back(BoundingBox3f{ Point3f{ x2,y1,z1 }, Point3f{ x3,y2,z2 } });
+	sub_b_box.push_back(BoundingBox3f{ Point3f{ x1,y1,z2 }, Point3f{ x2,y2,z3 } });
+	sub_b_box.push_back(BoundingBox3f{ Point3f{ x2,y1,z2 }, Point3f{ x3,y2,z3 } });
+
+	sub_b_box.push_back(BoundingBox3f{ Point3f{ x1,y2,z1 }, Point3f{ x2,y3,z2 } });
+	sub_b_box.push_back(BoundingBox3f{ Point3f{ x2,y2,z1 }, Point3f{ x3,y3,z2 } });
+	sub_b_box.push_back(BoundingBox3f{ Point3f{ x1,y2,z2 }, Point3f{ x2,y3,z3 } });
+	sub_b_box.push_back(BoundingBox3f{ Point3f{ x2,y2,z2 }, Point3f{ x3,y3,z3 } });
+
+
+	// Mesh를 이루는 작은 삼각형들 각각이 어떤 bounding box안에 포함하는지 체크하고
+	// 같은 bounding box에 들어가는 삼각형들끼리 모은다
+	std::vector<Point3i> triangle_list[8];
+
+	for (int index = 0; index < triangles.cols(); ++index) {
+
+		uint32_t v0_index = triangles(0, index); // 1st vertex index of target triangle
+		uint32_t v1_index = triangles(1, index); // 2st vertex index of target triangle
+		uint32_t v2_index = triangles(2, index); // 3st vertex index of target triangle
+
+		Point3f v0{ m_V(0, v0_index), m_V(1, v0_index), m_V(2, v0_index) };
+		Point3f v1{ m_V(0, v1_index), m_V(1, v1_index), m_V(2, v1_index) };
+		Point3f v2{ m_V(0, v2_index), m_V(1, v2_index), m_V(2, v2_index) };
+
+		for (int i = 0; i < 8; ++i) {
+			if (sub_b_box[i].contains(v0, false) 
+				&& sub_b_box[i].contains(v1, false)
+				&& sub_b_box[i].contains(v2, false)) {
+				triangle_list[i].push_back(Point3i(v0_index, v1_index, v2_index));
+			}
+		}
+	}
+
+	int total = 0;
+	for (int i = 0; i < 8; ++i) {
+		cout << i << "번째 삼각형 리스트의 사이즈: " << triangle_list[i].size() << endl;
+		total += triangle_list[i].size();
+	}
+	cout << "total: " << total << endl;
+
+	MatrixXu triangle_matrix[8];
+	for (int i = 0; i < 8; ++i) {
+		triangle_matrix[i] = MatrixXu::Zero(3, triangle_list[i].size());
+		for (int j = 0; j < triangle_list[i].size(); ++j) {
+			triangle_matrix[i].col(j) << 
+				triangle_list[i].at(j)[0], 
+				triangle_list[i].at(j)[1], 
+				triangle_list[i].at(j)[2];
+		}
+	}
+
+	Octree::Node *node = new Octree::Node();
+	node->b_box = b_box;
+	node->m_F = triangles;
+
+	for (int i = 0; i < 8; ++i) {
+		node->appendChild(build(sub_b_box[i], triangle_matrix[i]));
+	}
+
+	return node;
+}
+

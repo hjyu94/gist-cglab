@@ -1,0 +1,17 @@
+﻿  acceleration.cpp
+c:\users\cglab5\desktop\hjeong\scratchapixel\introduction to acceleration structures\acceleration.cpp(51): warning C4305: 'initializing': truncation from 'double' to 'float'
+c:\users\cglab5\desktop\hjeong\scratchapixel\introduction to acceleration structures\teapotdata.h(348): warning C4838: conversion from 'double' to 'float' requires a narrowing conversion
+c:\users\cglab5\desktop\hjeong\scratchapixel\introduction to acceleration structures\teapotdata.h(348): warning C4305: 'initializing': truncation from 'double' to 'float'
+c:\users\cglab5\desktop\hjeong\scratchapixel\introduction to acceleration structures\acceleration.cpp(567): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\cglab5\desktop\hjeong\scratchapixel\introduction to acceleration structures\acceleration.cpp(899): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\cglab5\desktop\hjeong\scratchapixel\introduction to acceleration structures\acceleration.cpp(901): warning C4244: '=': conversion from 'float' to 'uint32_t', possible loss of data
+c:\users\cglab5\desktop\hjeong\scratchapixel\introduction to acceleration structures\acceleration.cpp(914): error C2059: syntax error: ')'
+c:\users\cglab5\desktop\hjeong\scratchapixel\introduction to acceleration structures\acceleration.cpp(933): warning C4244: 'argument': conversion from 'float' to 'const uint32_t', possible loss of data
+c:\users\cglab5\desktop\hjeong\scratchapixel\introduction to acceleration structures\acceleration.cpp(934): warning C4244: 'argument': conversion from 'float' to 'const uint32_t', possible loss of data
+c:\users\cglab5\desktop\hjeong\scratchapixel\introduction to acceleration structures\acceleration.cpp(935): warning C4244: 'argument': conversion from 'float' to 'const uint32_t', possible loss of data
+c:\users\cglab5\desktop\hjeong\scratchapixel\introduction to acceleration structures\acceleration.cpp(936): warning C4244: 'argument': conversion from 'float' to 'const uint32_t', possible loss of data
+c:\users\cglab5\desktop\hjeong\scratchapixel\introduction to acceleration structures\acceleration.cpp(937): warning C4244: 'argument': conversion from 'float' to 'const uint32_t', possible loss of data
+c:\users\cglab5\desktop\hjeong\scratchapixel\introduction to acceleration structures\acceleration.cpp(938): warning C4244: 'argument': conversion from 'float' to 'const uint32_t', possible loss of data
+c:\users\cglab5\desktop\hjeong\scratchapixel\introduction to acceleration structures\acceleration.cpp(999): warning C4244: 'argument': conversion from 'float' to 'const uint32_t', possible loss of data
+c:\users\cglab5\desktop\hjeong\scratchapixel\introduction to acceleration structures\acceleration.cpp(1050): warning C4244: 'argument': conversion from 'double' to 'const float', possible loss of data
+c:\users\cglab5\desktop\hjeong\scratchapixel\introduction to acceleration structures\acceleration.cpp(1058): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data

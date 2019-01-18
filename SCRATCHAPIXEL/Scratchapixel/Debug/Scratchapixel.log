@@ -1,0 +1,17 @@
+﻿  whitted.cpp
+c:\users\cglab5\desktop\hjeong\scratchapixel\scratchapixel\whitted.cpp(43): warning C4305: 'initializing': truncation from 'double' to 'float'
+c:\users\cglab5\desktop\hjeong\scratchapixel\scratchapixel\whitted.cpp(148): warning C4305: 'initializing': truncation from 'double' to 'float'
+c:\users\cglab5\desktop\hjeong\scratchapixel\scratchapixel\whitted.cpp(148): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\cglab5\desktop\hjeong\scratchapixel\scratchapixel\whitted.cpp(166): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\cglab5\desktop\hjeong\scratchapixel\scratchapixel\whitted.cpp(170): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\cglab5\desktop\hjeong\scratchapixel\scratchapixel\whitted.cpp(300): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+c:\users\cglab5\desktop\hjeong\scratchapixel\scratchapixel\whitted.cpp(301): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\cglab5\desktop\hjeong\scratchapixel\scratchapixel\whitted.cpp(513): warning C4244: 'argument': conversion from 'int' to 'const float', possible loss of data
+c:\users\cglab5\desktop\hjeong\scratchapixel\scratchapixel\whitted.cpp(538): warning C4244: 'argument': conversion from 'double' to 'const float', possible loss of data
+c:\users\cglab5\desktop\hjeong\scratchapixel\scratchapixel\whitted.cpp(544): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\cglab5\desktop\hjeong\scratchapixel\scratchapixel\whitted.cpp(545): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\cglab5\desktop\hjeong\scratchapixel\scratchapixel\whitted.cpp(579): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\cglab5\desktop\hjeong\scratchapixel\scratchapixel\whitted.cpp(614): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\cglab5\desktop\hjeong\scratchapixel\scratchapixel\whitted.cpp(616): warning C4305: '=': truncation from 'double' to 'float'
+  Scratchapixel.vcxproj -> C:\Users\CGLab5\Desktop\hjeong\SCRATCHAPIXEL\Scratchapixel\Debug\Scratchapixel.exe
+  Scratchapixel.vcxproj -> C:\Users\CGLab5\Desktop\hjeong\SCRATCHAPIXEL\Scratchapixel\Debug\Scratchapixel.pdb (Full PDB)

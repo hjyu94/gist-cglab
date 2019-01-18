@@ -1,0 +1,2 @@
+﻿8.13 익명 객체_2.obj : error LNK2005: _main already defined in 8.13 익명 객체.obj
+C:\Users\CGLab5\Desktop\hjeong\CPP\Debug\Chapter8.exe : fatal error LNK1169: one or more multiply defined symbols found

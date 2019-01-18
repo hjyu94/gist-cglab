@@ -1,0 +1,2 @@
+﻿  9.12 이니셜라이져 리스트 initializer list.cpp
+c:\users\cglab5\desktop\hjeong\cpp\chapter9\9.12 이니셜라이져 리스트 initializer list.cpp(31): error C2676: binary '[': 'const std::initializer_list<int>' does not define this operator or a conversion to a type acceptable to the predefined operator

@@ -1,0 +1,3 @@
+﻿  2_8,9 상수.cpp
+d:\project\c\lecture_hongjungmo\c++\chapter1\2_8,9 상수.cpp(12): error C3892: 'my_number': you cannot assign to a variable that is const
+d:\project\c\lecture_hongjungmo\c++\chapter1\2_8,9 상수.cpp(34): error C3892: 'special_number': you cannot assign to a variable that is const

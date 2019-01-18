@@ -1,0 +1,9 @@
+﻿  1_11 헤더파일.cpp
+  1_12 헤더가드.cpp
+  1_14 전처리기.cpp
+  1_11 add.cpp
+  Generating Code...
+1_12 헤더가드.obj : error LNK2005: _main already defined in 1_11 헤더파일.obj
+1_14 전처리기.obj : error LNK2005: _main already defined in 1_11 헤더파일.obj
+1_11 add.obj : error LNK2005: "int __cdecl add(int,int)" (?add@@YAHHH@Z) already defined in 1_12 헤더가드.obj
+D:\Project\C\lecture_HongJungMo\C++\Debug\Chapter1.exe : fatal error LNK1169: one or more multiply defined symbols found
